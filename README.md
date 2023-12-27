@@ -1,5 +1,7 @@
-# Sistema DSCommerce v1
+# Sistema DSCommerce v2 API REST
 ## Projeto JAVA Springboot JPA
+
+Desenvolvimento de recursos (endpoints) de API REST
 
 Projeto desenvolvido durante aula do curso de Formação Desenvolvedor Moderno ministrado pela [DevSuperior](https://devsuperior.com.br) (Nélio Alves).
 Utilizado banco de dados em memória H2.
