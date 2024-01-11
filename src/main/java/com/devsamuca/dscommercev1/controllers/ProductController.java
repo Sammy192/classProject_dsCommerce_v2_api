@@ -34,8 +34,8 @@ public class ProductController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public Page<ProductDTO> findAll(Pageable pageable) {
-        Page<ProductDTO> dto = service.findAll(pageable);
+    public Page<ProductDTO> findAll(@RequestParam(name = "name", defaultValue = "") String name, Pageable pageable) {
+        Page<ProductDTO> dto = service.findAll(name, pageable);
         return dto;
     }
 
