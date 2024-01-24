@@ -1,8 +1,8 @@
-package com.devsamuca.dscommercev1.controllers;
+package com.devsamuca.dscommercev2.controllers;
 
 
-import com.devsamuca.dscommercev1.dto.ProductDTO;
-import com.devsamuca.dscommercev1.services.ProductService;
+import com.devsamuca.dscommercev2.dto.ProductDTO;
+import com.devsamuca.dscommercev2.services.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/products")

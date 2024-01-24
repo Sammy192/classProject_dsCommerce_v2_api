@@ -1,8 +1,7 @@
-package com.devsamuca.dscommercev1.dto;
+package com.devsamuca.dscommercev2.dto;
 
-import com.devsamuca.dscommercev1.entities.Product;
+import com.devsamuca.dscommercev2.entities.Product;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 

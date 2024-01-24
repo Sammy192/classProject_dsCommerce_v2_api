@@ -1,4 +1,4 @@
-package com.devsamuca.dscommercev1.dto;
+package com.devsamuca.dscommercev2.dto;
 
 import java.time.Instant;
 import java.util.ArrayList;

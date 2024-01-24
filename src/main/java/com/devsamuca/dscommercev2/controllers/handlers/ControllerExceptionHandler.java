@@ -1,9 +1,9 @@
-package com.devsamuca.dscommercev1.controllers.handlers;
+package com.devsamuca.dscommercev2.controllers.handlers;
 
-import com.devsamuca.dscommercev1.dto.CustomError;
-import com.devsamuca.dscommercev1.dto.ValidationError;
-import com.devsamuca.dscommercev1.services.exceptions.DatabaseException;
-import com.devsamuca.dscommercev1.services.exceptions.ResourceNotFoundException;
+import com.devsamuca.dscommercev2.dto.CustomError;
+import com.devsamuca.dscommercev2.dto.ValidationError;
+import com.devsamuca.dscommercev2.services.exceptions.DatabaseException;
+import com.devsamuca.dscommercev2.services.exceptions.ResourceNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.devsamuca.dscommercev1.services.exceptions;
+package com.devsamuca.dscommercev2.services.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException {
 

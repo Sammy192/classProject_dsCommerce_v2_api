@@ -1,10 +1,10 @@
-package com.devsamuca.dscommercev1.services;
+package com.devsamuca.dscommercev2.services;
 
-import com.devsamuca.dscommercev1.dto.ProductDTO;
-import com.devsamuca.dscommercev1.entities.Product;
-import com.devsamuca.dscommercev1.repositories.ProductRepository;
-import com.devsamuca.dscommercev1.services.exceptions.DatabaseException;
-import com.devsamuca.dscommercev1.services.exceptions.ResourceNotFoundException;
+import com.devsamuca.dscommercev2.dto.ProductDTO;
+import com.devsamuca.dscommercev2.entities.Product;
+import com.devsamuca.dscommercev2.repositories.ProductRepository;
+import com.devsamuca.dscommercev2.services.exceptions.DatabaseException;
+import com.devsamuca.dscommercev2.services.exceptions.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -13,9 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ProductService {

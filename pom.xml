@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devsamuca</groupId>
-	<artifactId>dscommercev1</artifactId>
+	<artifactId>dscommercev2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dscommercev1</name>
 	<description>DSCommercev1 DevSamuca</description>

@@ -1,10 +1,9 @@
-package com.devsamuca.dscommercev1.repositories;
+package com.devsamuca.dscommercev2.repositories;
 
-import com.devsamuca.dscommercev1.entities.Product;
+import com.devsamuca.dscommercev2.entities.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
 

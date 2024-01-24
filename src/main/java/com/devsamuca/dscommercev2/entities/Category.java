@@ -1,4 +1,4 @@
-package com.devsamuca.dscommercev1.entities;
+package com.devsamuca.dscommercev2.entities;
 
 import jakarta.persistence.*;
 
