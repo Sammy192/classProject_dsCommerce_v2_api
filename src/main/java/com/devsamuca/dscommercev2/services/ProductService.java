@@ -1,7 +1,9 @@
 package com.devsamuca.dscommercev2.services;
 
+import com.devsamuca.dscommercev2.dto.CategoryDTO;
 import com.devsamuca.dscommercev2.dto.ProductDTO;
 import com.devsamuca.dscommercev2.dto.ProductMinDTO;
+import com.devsamuca.dscommercev2.entities.Category;
 import com.devsamuca.dscommercev2.entities.Product;
 import com.devsamuca.dscommercev2.repositories.ProductRepository;
 import com.devsamuca.dscommercev2.services.exceptions.DatabaseException;
@@ -78,5 +80,12 @@ public class ProductService {
         entity.setDescription(dto.getDescription());
         entity.setPrice(dto.getPrice());
         entity.setImgUrl(dto.getImgUrl());
+
+        entity.getCategories().clear();
+        for (CategoryDTO catDto : dto.getCategories()) {
+            Category cat = new Category();
+            cat.setId(catDto.getId());
+            entity.getCategories().add(cat);
+        }
     }
 }
