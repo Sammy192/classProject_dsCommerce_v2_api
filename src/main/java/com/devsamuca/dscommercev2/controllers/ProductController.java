@@ -2,6 +2,7 @@ package com.devsamuca.dscommercev2.controllers;
 
 
 import com.devsamuca.dscommercev2.dto.ProductDTO;
+import com.devsamuca.dscommercev2.dto.ProductMinDTO;
 import com.devsamuca.dscommercev2.services.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +35,8 @@ public class ProductController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public Page<ProductDTO> findAll(@RequestParam(name = "name", defaultValue = "") String name, Pageable pageable) {
-        Page<ProductDTO> dto = service.findAll(name, pageable);
+    public Page<ProductMinDTO> findAll(@RequestParam(name = "name", defaultValue = "") String name, Pageable pageable) {
+        Page<ProductMinDTO> dto = service.findAll(name, pageable);
         return dto;
     }
 

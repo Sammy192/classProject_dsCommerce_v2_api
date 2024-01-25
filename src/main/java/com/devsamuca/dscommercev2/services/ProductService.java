@@ -1,6 +1,7 @@
 package com.devsamuca.dscommercev2.services;
 
 import com.devsamuca.dscommercev2.dto.ProductDTO;
+import com.devsamuca.dscommercev2.dto.ProductMinDTO;
 import com.devsamuca.dscommercev2.entities.Product;
 import com.devsamuca.dscommercev2.repositories.ProductRepository;
 import com.devsamuca.dscommercev2.services.exceptions.DatabaseException;
@@ -28,10 +29,10 @@ public class ProductService {
     }
 
     @Transactional(readOnly = true)
-    public Page<ProductDTO> findAll(String name, Pageable pageable) {
+    public Page<ProductMinDTO> findAll(String name, Pageable pageable) {
        // Page<Product> result = repository.searchByName(name, pageable);
         Page<Product> result = repository.findByNameContainingIgnoreCase(name, pageable);
-        return result.map(x -> new ProductDTO(x));
+        return result.map(x -> new ProductMinDTO(x));
     }
 
     @Transactional
