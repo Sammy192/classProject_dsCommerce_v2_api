@@ -28,10 +28,15 @@ public class OrderService {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private AuthService authService;
+
     @Transactional(readOnly = true)
     public OrderDTO findById(Long id) {
         Order order = repository.findById(id).orElseThrow(
                 () -> new ResourceNotFoundException("Recurso não encontrado"));
+
+        authService.validadeSelfOrAdmin(order.getClient().getId());
         return new OrderDTO(order);
     }
 
@@ -43,7 +48,7 @@ public class OrderService {
         order.setMoment(Instant.now());
         order.setStatus(OrderStatus.WAITING_PAYMENT);
 
-        User user = userService.aythenticated();
+        User user = userService.authenticated();
         order.setClient(user);
 
         for (OrderItemDTO itemDTO : dto.getItems()) {
