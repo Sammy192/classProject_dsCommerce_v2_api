@@ -11,8 +11,8 @@
 	<groupId>com.devsamuca</groupId>
 	<artifactId>dscommercev2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dscommercev1</name>
-	<description>DSCommercev1 DevSamuca</description>
+	<name>dscommercev2</name>
+	<description>DSCommercev2 DevSamuca</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -77,6 +77,43 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version> <!--$NO-MVN-MAN-VER$ -->
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.7</version>
+				<configuration>
+					<excludes>
+						<exclude>com/devsamuca/dscommercev2/Dscommercev2Application.class</exclude>
+						<exclude>com/devsamuca/dscommercev2/config/**</exclude>
+						<exclude>com/devsamuca/dscommercev2/entities/**</exclude>
+						<exclude>com/devsamuca/dscommercev2/dto/**</exclude>
+						<exclude>com/devsamuca/dscommercev2/controllers/handlers/**</exclude>
+						<exclude>com/devsamuca/dscommercev2/services/exceptions/**</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>target/jacoco-report</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
