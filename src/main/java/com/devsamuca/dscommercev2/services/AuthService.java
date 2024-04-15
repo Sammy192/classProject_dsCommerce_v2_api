@@ -11,7 +11,7 @@ public class AuthService {
     @Autowired
     private UserService userService;
 
-    public void validadeSelfOrAdmin(long userId) {
+    public void validadeSelfOrAdmin(Long userId) {
         User me = userService.authenticated();
         if (me.hasRole("ROLE_ADMIN")) {
             return;

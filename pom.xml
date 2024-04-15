@@ -95,6 +95,8 @@
 						<exclude>com/devsamuca/dscommercev2/dto/**</exclude>
 						<exclude>com/devsamuca/dscommercev2/controllers/handlers/**</exclude>
 						<exclude>com/devsamuca/dscommercev2/services/exceptions/**</exclude>
+						<exclude>com/devsamuca/dscommercev2/services/util/**</exclude>
+						<exclude>com/devsamuca/dscommercev2/services/controllers/**</exclude>
 					</excludes>
 				</configuration>
 				<executions>
