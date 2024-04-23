@@ -1,6 +1,9 @@
 # Projeto Final - Sistema de Comércio Eletrônico DSCommerce
 ## Projeto JAVA Springboot JPA
 
+![image](https://github.com/Sammy192/classProject_dsCommerce_v2_api/assets/53224915/b378f1d6-98f2-4e58-83a3-67587171c1b9)
+![image](https://github.com/Sammy192/classProject_dsCommerce_v2_api/assets/53224915/4c049725-54c9-4793-8f96-151eea27443a)
+
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -17,6 +20,7 @@ abrangendo cadastros de usuários, produtos e categorias. Cada usuário, seja cl
 tem sua própria área de interação com o sistema. Os administradores têm acesso à área administrativa para gerenciar
 usuários, produtos e categorias.
 
+## Testes implementados usando JUNI, mockMVC e cobertura de testes com Jacoco Report
 
 ## Funcionalidades Principais
 
